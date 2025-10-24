@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Demo - Hoshinova AI</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar">
+            <div class="logo">Hoshinova AI</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="contact.html">Demo</a></li>
+            </ul>
+            <div class="nav-balance-right">
+    <label class="theme-switch" for="theme-toggle-checkbox">
+        <input type="checkbox" id="theme-toggle-checkbox">
+        <div class="theme-slider">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+        </div>
+    </label>
+</div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-form-container">
+            <h2>Dapatkan Demo Gratis 14 Hari</h2>
+            <p style="text-align: center; margin-bottom: 2rem; color: #666;">
+                Isi form di bawah dan tim kami akan segera menyiapkan akun Anda.
+            </p>
+            
+            <form action="process.php" method="POST" id="contact-form">
+                
+                <div class="form-group">
+                    <label for="name">Nama Lengkap</label>
+                    <input type="text" id="name" name="user_name">
+                    <small class="error-message">Nama lengkap wajib diisi</small>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Perusahaan</label>
+                    <input type="email" id="email" name="user_email">
+                    <small class="error-message">Email tidak valid</small>
+                </div>
+                
+                <div class="form-group">
+                    <label for="company">Nama Perusahaan</label>
+                    <input type="text" id="company" name="user_company">
+                    <small class="error-message">Nama perusahaan wajib diisi</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Apa yang ingin Anda capai? (Opsional)</label>
+                    <textarea id="message" name="user_message" rows="4"></textarea>
+                </div>
+                
+                <button type="submit" class="submit-button">Request Demo</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Hoshinova AI. All Rights Reserved.</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
